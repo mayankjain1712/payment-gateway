@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparks foundation</title>
+</head>
+<body>
+
+    <!--HOME-->
+    <header>
+            <nav>
+                <div class="logo">Sparks <span>Foundation</span></div>
+                <div class="menu">
+                    <a href="#" ><span>Home</span></a>
+                    <a href="#about">About Us</a>
+                    <a href="#donation">Donate</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+            <div class="text">
+                <h1>Your <span>Support</span></h1>
+                <h1>is POWER<span>FUL</span></h1>
+                <p>WE HELP <span>ALL PEOPLE</span> 
+                    IN NEED AROUND <span>THE WORLD!</span> 
+                </p>
+            </div>
+
+            <button class="c-btn" id="rzp-button1"><a href="#">Donate</a></button>
+    </header>
+
+
+    <!--About us-->
+
+    <section id="about">
+        <div class="section-info">
+            <h1>About Us</h1>
+            <p>The Foundation For The All In Need</p>
+        </div>
+        
+            <div class="projects-row">
+                <div class="disci">
+                    <img src="logo_small.png" alt="logo" class="src">
+                    <h1>Join Our Team</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias dolor sunt dicta, odit natus repellendus magnam fugit voluptatibus dolorem officiis rem facere quia mollitia corrupti quam ratione beatae, corporis labor</p>
+                </div>
+                <div class="disci">
+                    <img src="logo_small.png" alt="logo" class="src">
+                    <h1>HELP US WITH DONATION</h1>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consequuntur? Deleniti fuga accusantium molestiae temporibus similique quod in? Vitae laborum rem hic aspernatur placeat tenetur.
+                    </P>
+                </div>
+                <div class="disci">
+                    <img src="logo_small.png" alt="logo" class="src">
+                    <h1>HUMAN SERVICES </h1>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consequuntur? Deleniti fuga accusantium molestiae temporibus similique quod in? Vitae laborum rem hic aspernatur placeat tenetur.
+                    </P>
+                </div>
+                
+                </div>
+            </div>         
+    </section>
+
+    <!--DONATE-->
+
+
+    <section id="donation" style="border: 2px dotted red;">
+        <div class="section-info">
+            <h1 style="color: red;">DONATE</h1>
+            <P >SUPPORT OUR FOUNDATION</P>
+            <P >YOUR SMALL GESTURE CAN HELP MANY LIFES</P>
+        </div>
+        <div class="donate-descri">
+            <button class="ct-btn" id="rzp-button1"><a href="#">Donate</a></button>
+            <div class="terms">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente tenetur reprehenderit dignissimos perferendis, sequi incidunt inventore sint adipisci ipsam sit earum atque aliquid placeat, consequuntur voluptate nulla rem rerum ducimus voluptates. Mollitia fugit tenetur accusantium ipsam dolore, voluptates totam possimus molestias quam, suscipit corporis quisquam fugiat laborum sed laudantium unde vitae magnam eum reiciendis libero eius. Cum cumque placeat, necessitatibus accusamus delect reiciendis est voluptate dicta. Explicabo ad deleniti unde non aut. Veniam!</p>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACT-->
+    <section id="contact">
+        <div class="section-info">
+            <h1>To Contact</h1>
+            <p style="color: cornsilk;">We Are Always Available</p>
+        </div>
+        <div class="contact-row">
+            <div class="contact-left-col">
+                <img src="b3.png" alt="boy">
+            </div>
+            <div class="contact-right-col">
+                <form action="">
+                    <h2>Connect With Us</h2>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="E-mail">
+                    <br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea><br>
+                    <button class="c-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+
+    <section id="footer">
+        <h2>Developed by : Mayank Jain</h2>
+        <img src="icon.png" alt="icon" width="100px">
+    </section>
+
+
+
+        <!--js script-->
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+var options = {
+    "key": "rzp_test_bU5r8x2nnh3oxJ", // Enter the Key ID generated from the Dashboard
+    "amount": "175000", // Amount is in currency subunits. Default currency is INR. Hence, 500 refers to 50000 paise
+    "currency": "INR",
+    "name": "Spraks Foundation donate",
+    "description": "Test Transaction",
+    "image": "https://example.com/your_logo",
+    "order_id": "order_HZGvy4vQ3hsajK", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+    "handler": function (response){
+        alert(response.razorpay_payment_id);
+        alert(response.razorpay_order_id);
+        alert(response.razorpay_signature);
+    },
+    "prefill": {
+        "name": "Mayank Jain",
+        "email": "mayankjain99335@gmail.com",
+        "contact": "9993431405"
+    },
+    "notes": {
+        "address": "Razorpay Corporate Office"
+    },
+    "theme": {
+        "color": "#3399cc"
+    }
+};
+
+var options = {
+    "key": "rzp_test_bU5r8x2nnh3oxJ", // Enter the Key ID generated from the Dashboard
+    "amount": "250000", // Amount is in currency subunits. Default currency is INR. Hence, 500 refers to 50000 paise
+    "currency": "INR",
+    "name": "Spraks Foundation donate",
+    "description": "Test Transaction",
+    "image": "https://example.com/your_logo",
+    "order_id": "order_HZGxc8w0TrtKts", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+    "handler": function (response){
+        alert(response.razorpay_payment_id);
+        alert(response.razorpay_order_id);
+        alert(response.razorpay_signature);
+    },
+    "prefill": {
+        "name": "Mayank Jain",
+        "email": "mayankjain99335@gmail.com",
+        "contact": "9993431405"
+    },
+    "notes": {
+        "address": "Razorpay Corporate Office"
+    },
+    "theme": {
+        "color": "#3399cc"
+    }
+};
+
+var options = {
+    "key": "rzp_test_bU5r8x2nnh3oxJ", // Enter the Key ID generated from the Dashboard
+    "amount": "52500", // Amount is in currency subunits. Default currency is INR. Hence, 500 refers to 50000 paise
+    "currency": "INR",
+    "name": "Spraks Foundation donate",
+    "description": "Test Transaction",
+    "image": "https://example.com/your_logo",
+    "order_id": "order_HZGylea6OVasVc", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+    "handler": function (response){
+        alert(response.razorpay_payment_id);
+        alert(response.razorpay_order_id);
+        alert(response.razorpay_signature);
+    },
+    "prefill": {
+        "name": "Mayank Jain",
+        "email": "mayankjain99335@gmail.com",
+        "contact": "9993431405"
+    },
+    "notes": {
+        "address": "Razorpay Corporate Office"
+    },
+    "theme": {
+        "color": "#3399cc"
+    }
+};
+var rzp1 = new Razorpay(options);
+rzp1.on('payment.failed', function (response){
+        alert(response.error.code);
+        alert(response.error.description);
+        alert(response.error.source);
+        alert(response.error.step);
+        alert(response.error.reason);
+        alert(response.error.metadata.order_id);
+        alert(response.error.metadata.payment_id);
+});
+document.getElementById('rzp-button1').onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+</script>
+</body>
+</html>
